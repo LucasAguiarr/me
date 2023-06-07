@@ -2,14 +2,17 @@
 
 import { useTheme } from 'next-themes';
 
-export function ModeToggle() {
-  const { setTheme } = useTheme();
+import { Icons } from '@/components/icons';
 
+export function ModeToggle() {
+  const { theme, setTheme } = useTheme();
+
+  function handleThemeChange() {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  }
   return (
-    <div className="flex gap-2">
-      <button onClick={() => setTheme('light')}>Light</button>
-      <button onClick={() => setTheme('dark')}>Dark</button>
-      <button onClick={() => setTheme('system')}>System</button>
-    </div>
+    <button onClick={handleThemeChange} className="w-6">
+      {theme === 'dark' ? <Icons.moon /> : <Icons.sun />}
+    </button>
   );
 }

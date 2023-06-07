@@ -17,7 +17,7 @@ export function SiteHeader() {
           <MobileNav />
         </div>
 
-        <div className="mt-6 hidden md:block">
+        <div className="mt-6 hidden md:flex md:h-full">
           <MainNave />
         </div>
       </div>
