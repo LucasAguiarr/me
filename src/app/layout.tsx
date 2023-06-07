@@ -67,7 +67,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
-            <div className="mt-24 flex-1 md:ml-64 md:mt-0">{children}</div>
+            <div className="mt-16 flex-1 md:ml-64 md:mt-0">{children}</div>
             {/* <SiteFooter /> */}
           </div>
           <TailwindIndicator />
