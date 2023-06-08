@@ -1,12 +1,14 @@
 import './globals.css';
 
+import { Metadata } from 'next';
+
+import { Analytics } from '@/components/analytics';
 import { SiteHeader } from '@/components/site-header';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { ThemeProvider } from '@/components/theme-provider';
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
-import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
@@ -22,33 +24,16 @@ export const metadata: Metadata = {
     'Radix UI',
   ],
   authors: [{ ...siteConfig.author }],
-  creator: siteConfig.name,
+  creator: siteConfig.author.name,
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
-  openGraph: {
-    type: 'website',
-    locale: 'pt_BR',
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    siteName: siteConfig.name,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
-  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
 export default function RootLayout({
@@ -72,6 +57,7 @@ export default function RootLayout({
           </div>
           <TailwindIndicator />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

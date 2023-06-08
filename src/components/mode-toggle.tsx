@@ -10,6 +10,7 @@ export function ModeToggle() {
   function handleThemeChange() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   }
+
   return (
     <button onClick={handleThemeChange} className="w-6">
       {theme === 'dark' ? <Icons.moon /> : <Icons.sun />}

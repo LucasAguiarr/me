@@ -1,3 +1,4 @@
+'use client';
 import { SVGProps } from 'react';
 
 interface Props extends SVGProps<SVGSVGElement> {}
@@ -9,8 +10,8 @@ export function Sun({ className, ...rest }: Props) {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      {...rest}
       className={`w-full h-auto ${className}`}
+      {...rest}
     >
       <g
         fill="none"

@@ -9,8 +9,8 @@ export function Moon({ className, ...rest }: Props) {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      {...rest}
       className={`w-full h-auto ${className}`}
+      {...rest}
     >
       <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
       <g
