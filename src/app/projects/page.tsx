@@ -1,5 +1,3 @@
-type Props = {};
-
-export default function ProjectPage({}: Props) {
-  return <div>ProjectPage</div>;
+export default function ProjectPage() {
+  return <h1>ProjectPage</h1>;
 }

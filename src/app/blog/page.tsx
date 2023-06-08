@@ -1,5 +1,3 @@
-type Props = {};
-
-export default function BlogPage({}: Props) {
-  return <div>BlogPage</div>;
+export default function BlogPage() {
+  return <h1>BlogPage</h1>;
 }

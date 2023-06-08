@@ -1,5 +1,3 @@
-type Props = {};
-
-export default function AboutPage({}: Props) {
-  return <div>AboutPage</div>;
+export default function AboutPage() {
+  return <h1>AboutPage</h1>;
 }

@@ -1,7 +1,6 @@
 export const siteConfig = {
   name: 'Lucas`s Blog',
-  url: '',
-  ogImage: '',
+  url: 'https://me-lucasaguiarr.vercel.app',
   description: 'Blog about software development and other cool stuff',
   author: {
     name: 'Lucas Aguiar',
@@ -10,7 +9,6 @@ export const siteConfig = {
   links: {
     github: 'https://github.com/lucasaguiarr',
     linkedin: 'https://www.linkedin.com/in/lucasaguiiar',
-    instagram: '',
     twitter: '',
   },
 };
