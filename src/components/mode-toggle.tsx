@@ -13,9 +13,9 @@ export function ModeToggle() {
   }
 
   return (
-    <div className="flex items-center space-x-4 rounded-md border p-4">
+    <div className="flex items-center space-x-4 justify-between rounded-md border p-4">
       {theme === 'light' ? <Icons.sun /> : <Icons.moon />}
-      <div className="flex-1 space-y-1">
+      <div className="hidden md:flex flex-1">
         <p className="text-sm font-medium leading-none">
           {theme === 'light' ? 'Light' : 'Dark'} Mode
         </p>

@@ -55,9 +55,13 @@ export function MainNave({ cb }: MainNaveProps) {
   return (
     <div className="flex flex-col justify-between">
       <nav>
-        <Input type="search" placeholder="Search..." className="h-9" />
+        <Input
+          type="search"
+          placeholder="Search..."
+          className="hidden md:block h-9"
+        />
 
-        <div className="flex flex-col gap-2 mt-10">
+        <div className="flex flex-col gap-2 mt-4 md:mt-10">
           <p className="uppercase text-xs font-light leading-loose">Menu</p>
           <MenuButton path="" isSelect={verifyPath('/')} onClick={cb}>
             <Icons.compass className="w-4 h-4" />

@@ -45,11 +45,11 @@ export function ProjectCard({
               <CardDescription>{description}</CardDescription>
             </div>
 
-            <div className="flex gap-2 mt-4">
+            <div className="flex flex-wrap gap-2 mt-4">
               {tags?.map(tag => (
                 <p
                   key={tag}
-                  className="flex items-center rounded-md border p-2"
+                  className="flex items-center rounded-md border p-2 text-xs md:text-base"
                 >
                   {tag}
                 </p>
