@@ -2,7 +2,8 @@
 
 import { useTheme } from 'next-themes';
 
-import { Icons } from '@/components/icons';
+import { Switch } from '@/components/ui/switch';
+import { Icons } from './icons';
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -12,8 +13,14 @@ export function ModeToggle() {
   }
 
   return (
-    <button onClick={handleThemeChange} className="w-6">
-      {theme === 'dark' ? <Icons.moon /> : <Icons.sun />}
-    </button>
+    <div className="flex items-center space-x-4 rounded-md border p-4">
+      {theme === 'light' ? <Icons.sun /> : <Icons.moon />}
+      <div className="flex-1 space-y-1">
+        <p className="text-sm font-medium leading-none">
+          {theme === 'light' ? 'Light' : 'Dark'} Mode
+        </p>
+      </div>
+      <Switch onCheckedChange={handleThemeChange} />
+    </div>
   );
 }

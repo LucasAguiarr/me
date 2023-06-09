@@ -3,10 +3,10 @@
 import * as React from 'react';
 
 import { Icons } from '@/components/icons';
+import { MainNave } from '@/components/main-nav';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { MainNave } from './main-nav';
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);

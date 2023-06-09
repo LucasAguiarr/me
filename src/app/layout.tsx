@@ -3,6 +3,7 @@ import './globals.css';
 import { Metadata } from 'next';
 
 import { Analytics } from '@/components/analytics';
+import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -45,15 +46,21 @@ export default function RootLayout({
     <html lang="pt_BR">
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased transition-colors duration-300',
+          'min-h-screen bg-background font-sans antialiased',
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="relative flex min-h-screen flex-col">
+          <div className="relative">
             <SiteHeader />
-            <div className="mt-16 flex-1 md:ml-64 md:mt-0">{children}</div>
-            {/* <SiteFooter /> */}
+
+            <div className=" flex flex-col items-center lg:ml-64">
+              <main className="min-h-screen mt-28 mx-4 lg:w-3/4">
+                {children}
+              </main>
+
+              <SiteFooter />
+            </div>
           </div>
           <TailwindIndicator />
         </ThemeProvider>

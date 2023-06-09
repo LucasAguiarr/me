@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: 'Lucas`s Blog',
-  url: 'https://me-lucasaguiarr.vercel.app',
   description: 'Blog about software development and other cool stuff',
   author: {
     name: 'Lucas Aguiar',
     url: 'https://www.linkedin.com/in/lucasaguiiar',
+    email: 'luqkinhaas@gmail.com',
   },
   links: {
     github: 'https://github.com/lucasaguiarr',
