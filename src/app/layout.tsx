@@ -50,12 +50,12 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <div className="relative">
             <SiteHeader />
 
             <div className=" flex flex-col items-center lg:ml-64">
-              <main className="min-h-screen mt-28 mx-4 lg:w-3/4">
+              <main className="min-h-screen mt-28 mx-4 lg:w-3/4 max-w-3xl">
                 {children}
               </main>
 
