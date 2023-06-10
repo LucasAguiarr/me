@@ -9,7 +9,7 @@ export const siteConfig = {
   links: {
     github: 'https://github.com/lucasaguiarr',
     linkedin: 'https://www.linkedin.com/in/lucasaguiiar',
-    twitter: '',
+    twitter: 'https://twitter.com/ilucas_aguiar',
   },
 };
 
