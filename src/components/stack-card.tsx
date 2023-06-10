@@ -90,8 +90,8 @@ function Stack({ title, image }: StackProps) {
       <Image
         alt={title}
         src={image}
-        width={24}
-        height={24}
+        width="20"
+        height="20"
         className="rounded-md"
       />
       <div className="flex-1 space-y-1">

@@ -35,9 +35,9 @@ export function ProjectCard({
           <Image
             alt={title}
             src={image}
-            width={200}
-            height={300}
-            className="rounded-md"
+            width="200"
+            height="300"
+            className="rounded-md w-auto h-auto"
           />
           <div className="flex flex-col justify-between">
             <div>

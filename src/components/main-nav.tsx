@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { Icons } from '@/components/icons';
 import { ModeToggle } from '@/components/mode-toggle';
 import { Button, ButtonProps } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { navs } from '@/config/navs';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 
@@ -55,32 +55,19 @@ export function MainNave({ cb }: MainNaveProps) {
   return (
     <div className="flex flex-col justify-between">
       <nav>
-        <Input
-          type="search"
-          placeholder="Search..."
-          className="hidden md:block h-9"
-        />
-
-        <div className="flex flex-col gap-2 mt-4 md:mt-10">
+        <div className="flex flex-col gap-2 mt-4">
           <p className="uppercase text-xs font-light leading-loose">Menu</p>
-          <MenuButton path="" isSelect={verifyPath('/')} onClick={cb}>
-            <Icons.compass className="w-4 h-4" />
-            Home
-          </MenuButton>
-
-          <MenuButton
-            path="projects"
-            isSelect={verifyPath('/projects')}
-            onClick={cb}
-          >
-            <Icons.paper className="w-4 h-4" />
-            Projects
-          </MenuButton>
-
-          <MenuButton path="about" isSelect={verifyPath('/about')} onClick={cb}>
-            <Icons.person className="w-4 h-4" />
-            About
-          </MenuButton>
+          {navs.map(nav => (
+            <MenuButton
+              key={nav.title}
+              path={nav.path}
+              isSelect={verifyPath(nav.path)}
+              onClick={cb}
+            >
+              {nav.icon}
+              {nav.title}
+            </MenuButton>
+          ))}
         </div>
 
         <div className="mt-10">
