@@ -6,7 +6,6 @@ import { ModeToggle } from '@/components/mode-toggle';
 import { Button, ButtonProps } from '@/components/ui/button';
 import { navs } from '@/config/navs';
 import { siteConfig } from '@/config/site';
-import { cn } from '@/lib/utils';
 
 type MenuButtonProps = ButtonProps & {
   path: string;
@@ -28,12 +27,11 @@ function MenuButton({
       rel={isExternal ? 'noreferrer' : undefined}
     >
       <Button
-        variant="ghost"
+        variant={isSelect ? 'outline' : 'ghost'}
         size="sm"
-        className={cn(
-          'flex w-full items-center gap-2 justify-start transition-colors hover:text-foreground/80',
-          isSelect ? 'text-foreground bg-accent' : 'text-foreground/60'
-        )}
+        className={
+          'flex w-full items-center gap-2 justify-start transition-colors hover:text-foreground/80'
+        }
         {...rest}
       >
         {children}
@@ -52,6 +50,7 @@ export function MainNave({ cb }: MainNaveProps) {
     if (path === '/') return pathname === path;
     return pathname.includes(path);
   }
+
   return (
     <div className="flex flex-col justify-between">
       <nav>
