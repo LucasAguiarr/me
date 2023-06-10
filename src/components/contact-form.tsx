@@ -1,4 +1,5 @@
 'use client';
+import { FormEvent, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -12,39 +13,99 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-type Props = {};
+import { siteConfig } from '@/config/site';
+import { sendEmail } from '@/hooks/use-send-email';
 
-export default function ContactForm({}: Props) {
+export default function ContactForm() {
+  const [isSending, setIsSending] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setIsSending(true);
+    const data = {
+      me: siteConfig.author.email,
+      name,
+      email,
+      message,
+    };
+    console.log({ data });
+    try {
+      await sendEmail(data);
+      resetForm();
+    } catch (error) {
+      console.log({ error });
+    } finally {
+      setIsSending(false);
+    }
+  }
+
+  function resetForm() {
+    setName('');
+    setEmail('');
+    setMessage('');
+  }
+
+  function handleNameChange(e: FormEvent<HTMLInputElement>) {
+    setName(e.currentTarget.value);
+  }
+
+  function handleEmailChange(e: FormEvent<HTMLInputElement>) {
+    setEmail(e.currentTarget.value);
+  }
+
+  function handleMessageChange(e: FormEvent<HTMLTextAreaElement>) {
+    setMessage(e.currentTarget.value);
+  }
+
   return (
-    <Card className="max-w-3xl">
-      <CardHeader>
-        <CardTitle>Send a message</CardTitle>
-        <CardDescription>
-          I'm always open to discuss new projects, creative ideas or
-          opportunities to be part of your visions.
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="flex flex-col gap-6">
-        <div className="flex items-center justify-between gap-6">
-          <div className="flex flex-col flex-1 gap-2">
-            <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Type your name" />
+    <form onSubmit={handleSubmit}>
+      <Card className="max-w-3xl">
+        <CardHeader>
+          <CardTitle>Send a message</CardTitle>
+          <CardDescription>
+            I'm always open to discuss new projects, creative ideas or
+            opportunities to be part of your visions.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-6">
+          <div className="flex items-center justify-between gap-6">
+            <div className="flex flex-col flex-1 gap-2">
+              <Label htmlFor="name">Name</Label>
+              <Input
+                id="name"
+                placeholder="Type your name"
+                onChange={handleNameChange}
+              />
+            </div>
+
+            <div className="flex flex-col flex-1 gap-2">
+              <Label htmlFor="email">Emil</Label>
+              <Input
+                id="email"
+                placeholder="Type your email"
+                onChange={handleEmailChange}
+              />
+            </div>
           </div>
 
           <div className="flex flex-col flex-1 gap-2">
-            <Label htmlFor="email">Emil</Label>
-            <Input id="email" placeholder="Type your email" />
+            <Label htmlFor="message">Message</Label>
+            <Textarea
+              id="message"
+              placeholder="Type your message here"
+              onChange={handleMessageChange}
+            />
           </div>
-        </div>
-
-        <div className="flex flex-col flex-1 gap-2">
-          <Label htmlFor="message">Message</Label>
-          <Textarea id="message" placeholder="Type your message here" />
-        </div>
-      </CardContent>
-      <CardFooter>
-        <Button className="w-full">Submit</Button>
-      </CardFooter>
-    </Card>
+        </CardContent>
+        <CardFooter>
+          <Button className="w-full">
+            {isSending ? 'Sending...' : 'Submit'}
+          </Button>
+        </CardFooter>
+      </Card>
+    </form>
   );
 }
