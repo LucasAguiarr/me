@@ -4,8 +4,6 @@ import sendgrid from '@sendgrid/mail';
 import { Email } from '@/components/email';
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY || '');
-console.log('sendgrid', sendgrid);
-console.log('process.env.SENDGRID_API_KEY', process.env.SENDGRID_API_KEY);
 interface EmailData {
   me: string;
   name: string;

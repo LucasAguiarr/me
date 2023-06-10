@@ -31,7 +31,6 @@ export default function ContactForm() {
       email,
       message,
     };
-    console.log({ data });
     try {
       await sendEmail(data);
       resetForm();
