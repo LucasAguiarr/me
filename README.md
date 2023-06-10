@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio
 
-## Getting Started
+Este é o repositório do meu site de portfólio, onde apresento meus projetos, informações sobre mim e formas de contato.
 
-First, run the development server:
+![Screenshot](./public/screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Recursos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Rota Home: Apresenta uma visão geral do meu trabalho e uma breve introdução.
+- Rota Projects: Mostra os projetos que desenvolvi, com detalhes sobre cada um deles.
+- Rota About: Fornece informações sobre minha experiência, habilidades e interesses.
+- Rota Contact: Permite que os visitantes entrem em contato comigo através de um formulário.
+- Modo Dark e Modo Light: Oferece aos usuários a opção de escolher entre temas escuros e claros.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demonstração
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Uma demonstração do site está disponível [aqui](https://lucas-aguiar.vercel.app).
 
-## Learn More
+## Pré-requisitos
 
-To learn more about Next.js, take a look at the following resources:
+Certifique-se de ter o seguinte instalado:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js (versão 18.16.0)
+- pnpm (versão 8.6.1)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Instalação
 
-## Deploy on Vercel
+1. Clone este repositório: `git clone https://github.com/LucasAguiarr/me.git`
+2. Acesse o diretório do projeto: `cd me`
+3. Instale as dependências: `pnpm install`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Uso
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Inicie o servidor de desenvolvimento: `pnpm dev`
+2. Abra o navegador e acesse: `http://localhost:3000`
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você tiver sugestões, melhorias ou encontrar algum problema, fique à vontade para abrir uma issue ou enviar um pull request.
+
+## To-do
+
+- [x] Rota Home
+- [x] Rota Projects
+- [x] Rota About
+- [x] Rota Contact
+- [x] Modo Dark
+- [x] Modo Light
+- [ ] Adicionar animações de transição
+- [ ] Otimizar o desempenho
+- [ ] Adicionar mais informações aos projetos
+
+## Licença
+
+Este projeto está licenciado sob a licença [MIT]. Para mais informações, consulte o arquivo [LICENSE](LICENSE).
+
