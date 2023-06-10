@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: 'Lucas`s Blog',
-  description: 'Blog about software development and other cool stuff',
+  name: 'Lucas Aguiar',
+  description: 'Lucas Aguiar - Fullstack Developer',
   author: {
     name: 'Lucas Aguiar',
     url: 'https://www.linkedin.com/in/lucasaguiiar',
