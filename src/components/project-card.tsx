@@ -27,20 +27,17 @@ export function ProjectCard({
 }: CardProps) {
   return (
     <Link href={`/projects/${slug}`}>
-      <Card
-        className={cn('flex flex-row cursor-pointer', className)}
-        {...props}
-      >
-        <CardHeader className="flex flex-row gap-4">
+      <Card className={cn('cursor-pointer', className)} {...props}>
+        <CardHeader className="flex flex-col lg:flex-row gap-4">
           <Image
             alt={title}
             src={image}
             width="200"
             height="200"
-            className="rounded-md aspect-video object-contain bg-accent hover:bg-accent-foreground hover:scale-105 transition-all duration-300"
+            className="w-full lg:w-fit aspect-video rounded-md object-contain bg-accent hover:bg-accent-foreground hover:scale-105 transition-all duration-150"
           />
           <div className="flex flex-col justify-between">
-            <div>
+            <div className="space-y-2">
               <CardTitle>{title}</CardTitle>
               <CardDescription>{description}</CardDescription>
             </div>
@@ -49,7 +46,7 @@ export function ProjectCard({
               {tags?.map(tag => (
                 <p
                   key={tag}
-                  className="flex items-center rounded-md border p-2 text-xs md:text-base"
+                  className="flex items-center rounded-md border p-2 text-xs"
                 >
                   {tag}
                 </p>

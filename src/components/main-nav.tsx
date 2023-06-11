@@ -52,7 +52,7 @@ export function MainNave({ cb }: MainNaveProps) {
   }
 
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col justify-between h-full">
       <nav>
         <div className="flex flex-col gap-2 mt-4">
           <p className="uppercase text-xs font-light leading-loose">Menu</p>
