@@ -36,8 +36,8 @@ export function ProjectCard({
             alt={title}
             src={image}
             width="200"
-            height="300"
-            className="rounded-md w-auto h-auto"
+            height="200"
+            className="rounded-md aspect-video object-contain bg-accent hover:scale-105 transition-all duration-300"
           />
           <div className="flex flex-col justify-between">
             <div>

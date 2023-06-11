@@ -6,41 +6,27 @@ export default function AboutPage() {
     <div>
       <PageHeader
         title={['About Lucas']}
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit"
+        description="Dedicated full stack developer with a passion for innovation."
       />
 
       <div className="mt-16 mb-10 flex flex-col gap-4">
         <Image
           alt="Lucas"
-          src="https://picsum.photos/1000/1000"
-          width="1000"
-          height="1000"
-          className="rounded-md aspect-video w-full max-h-96"
+          src="/images/about.jpg"
+          width="1200"
+          height="1200"
+          className="rounded-md aspect-video w-full max-h-96 object-cover hover:scale-105 transition-all duration-300"
         />
 
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          accusamus laborum eaque ut repellendus harum dicta voluptatibus sequi
-          natus corporis hic nulla modi molestiae reprehenderit, soluta debitis
-          illo, voluptatum, provident exercitationem beatae numquam ad iusto
-          labore itaque. Earum, eligendi alias.
-        </p>
-
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-          quis beatae ea eius ipsum voluptates aspernatur esse recusandae nobis
-          quo enim animi quasi necessitatibus sequi, pariatur omnis nemo
-          explicabo quod. Deserunt magni similique, perspiciatis modi magnam et,
-          sunt debitis expedita nam cupiditate reprehenderit iusto quisquam
-          exercitationem adipisci laboriosam cumque praesentium nostrum hic,
-          saepe error sequi in enim tempore. Dolore, beatae.
-        </p>
-
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta
-          at dolorum distinctio odit neque reiciendis ab sit id qui. Corrupti
-          deserunt, repellendus libero fuga facilis dolor placeat repudiandae
-          repellat.
+          My name is Lucas and I'm a 26-year-old full stack developer based in
+          Florianópolis, Brazil. I currently work at Khomp, where I contribute
+          to the development of innovative solutions. With expertise in both
+          front-end and back-end development, I strive to create comprehensive
+          and efficient applications. I am passionate about programming and
+          committed to delivering high-quality results. Join me on this journey
+          as I continue to grow and excel in my career as a full stack
+          developer.
         </p>
       </div>
     </div>

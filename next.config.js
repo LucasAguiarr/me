@@ -2,7 +2,7 @@
 const nextConfig = {
   swcMinify: true,
   images: {
-    domains: ['github.com', 'random.imagecdn.app', 'picsum.photos'],
+    domains: ['github.com', 'user-images.githubusercontent.com'],
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {

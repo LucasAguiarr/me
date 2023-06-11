@@ -4,10 +4,7 @@ export function ProfileCard() {
   return (
     <div className="flex gap-4 items-center">
       <Avatar>
-        <AvatarImage
-          src="https://github.com/lucasaguiarr.png"
-          alt="@lucasaguiarr"
-        />
+        <AvatarImage src="/images/profile.png" alt="@lucasaguiarr" />
         <AvatarFallback>LU</AvatarFallback>
       </Avatar>
 
