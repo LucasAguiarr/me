@@ -27,7 +27,7 @@ export default function ProjectPage({}: Props) {
           src={project.image}
           width="1000"
           height="1000"
-          className="rounded-md aspect-video w-full max-h-96"
+          className="rounded-md aspect-video w-full max-h-96 object-contain bg-accent hover:bg-accent-foreground hover:scale-105 transition-all duration-300"
         />
 
         {project.contents.map((content, index) => (

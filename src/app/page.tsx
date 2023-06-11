@@ -12,9 +12,7 @@ export default function Page() {
     <div>
       <PageHeader
         title={["Hey, I'm Lucas.", "I'm a developer from Brazil."]}
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          exercitationem blanditiis laborum ratione iste. Minima numquam ducimus
-          vero excepturi dicta?"
+        description="Full stack developer based in Florianópolis, Brazil, passionate about programming and innovation."
       >
         <div className="flex items-center gap-2 mt-8">
           <Button>
