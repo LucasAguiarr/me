@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <div>
       <PageHeader title={title} description={description}>
-        <div className="flex items-center gap-2 mt-8">
+        <div className="mt-8 flex items-center gap-2">
           <Button>
             <Link href="/contact">Contato</Link>
           </Button>
@@ -22,8 +22,13 @@ export default function Page() {
         </div>
       </PageHeader>
 
-      <div className="mt-16 mb-10 flex flex-col gap-4">
-        <p>Últimos projetos</p>
+      <div className="mb-10 mt-16 flex flex-col gap-4">
+        <div className="flex items-center justify-between">
+          <p>Últimos projetos</p>
+          <Button variant="link">
+            <Link href="/projects">Ver todos</Link>
+          </Button>
+        </div>
 
         {allProjects.slice(0, 2).map(project => (
           <ProjectCard key={project.title} {...project} />

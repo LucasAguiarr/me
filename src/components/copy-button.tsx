@@ -24,7 +24,7 @@ export default function CopyButton({ children, copy }: Props) {
 
   return (
     <Button variant="outline" onClick={handleCopy}>
-      <Icons.copy className="w-4 h-4 mr-2" />
+      <Icons.copy className="mr-2 h-4 w-4" />
       {copied ? 'Copied!' : children}
     </Button>
   );

@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export function ProfileCard() {
   return (
-    <div className="flex gap-4 items-center">
+    <div className="flex items-center gap-4">
       <Avatar>
         <AvatarImage src="/images/profile.png" alt="@lucasaguiarr" />
         <AvatarFallback>LU</AvatarFallback>

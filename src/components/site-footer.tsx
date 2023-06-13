@@ -18,7 +18,7 @@ function Link({ href, children }: LinkProps) {
 
 export function SiteFooter() {
   return (
-    <footer className="border-t py-6 lg:py-0 w-full">
+    <footer className="w-full border-t py-6 lg:py-0">
       <div className="container flex flex-col items-center justify-between gap-4 lg:h-24 lg:flex-row">
         <div className="flex flex-col items-center gap-4 px-8 lg:flex-row lg:gap-2 lg:px-0">
           <p className="text-center text-sm leading-loose text-muted-foreground lg:text-left">

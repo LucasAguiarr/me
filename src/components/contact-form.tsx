@@ -71,7 +71,7 @@ export default function ContactForm() {
         </CardHeader>
         <CardContent className="flex flex-col gap-6">
           <div className="flex items-center justify-between gap-6">
-            <div className="flex flex-col flex-1 gap-2">
+            <div className="flex flex-1 flex-col gap-2">
               <Label htmlFor="name">Nome</Label>
               <Input
                 id="name"
@@ -80,7 +80,7 @@ export default function ContactForm() {
               />
             </div>
 
-            <div className="flex flex-col flex-1 gap-2">
+            <div className="flex flex-1 flex-col gap-2">
               <Label htmlFor="email">E-mil</Label>
               <Input
                 id="email"
@@ -90,7 +90,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 gap-2">
+          <div className="flex flex-1 flex-col gap-2">
             <Label htmlFor="message">Mensagem</Label>
             <Textarea
               id="message"

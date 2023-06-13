@@ -21,19 +21,13 @@ export const projects = {
     },
     {
       title: 'Landing Page',
-      description:
-        'Landing Page do Data Insight Lab: Capacitando empresas com insights acionáveis de dados.',
+      description: 'Landing Page moderna e clean para Data Insight Lab.',
       tags: ['Next.js', 'TailwindCSS'],
       image: '/images/data-insight-lab.png',
       slug: 'data-insight-lab',
       repository: 'https://github.com/LucasAguiarr/data-insight-lab',
       contents: [
-        'Bem-vindo à Data & Analytics Solutions!',
-        'Na Data & Analytics Solutions, somos especializados no desenvolvimento de soluções abrangentes de ponta a ponta que capacitam as empresas com insights acionáveis a partir de seus dados. Com nossa expertise em análise de dados, análises avançadas e tecnologias de ponta, fornecemos soluções eficientes e eficazes, personalizadas para atender às suas necessidades específicas.',
-        'Nossa equipe dedicada de cientistas de dados e analistas trabalha em estreita colaboração com você para entender seus objetivos e desafios de negócios. Utilizamos o poder dos dados para descobrir insights valiosos, identificar tendências e tomar decisões orientadas por dados que impulsionam o crescimento e o sucesso.',
-        'Nosso conjunto de serviços inclui coleta de dados, limpeza e transformação de dados, modelagem de dados, análises preditivas, visualização e geração de relatórios. Utilizamos ferramentas e técnicas líderes do setor para garantir resultados da mais alta qualidade.',
-        'Se você deseja otimizar suas estratégias de marketing, melhorar a eficiência operacional, aprimorar a experiência do cliente ou obter uma vantagem competitiva, nossas soluções podem fornecer o conhecimento e as ferramentas necessárias para alcançar seus objetivos.',
-        'Experimente o poder da tomada de decisões orientada por dados com a Data & Analytics Solutions. Entre em contato conosco hoje mesmo para discutir como podemos ajudar a transformar seu negócio por meio de dados.',
+        'Foi desenvolvida uma Landing Page incrível para a empresa Data Insight Lab, com o objetivo de tornar o site existente mais moderno e organizado. Utilizando Next.js com o App Router, TypeScript e Tailwind CSS, o projeto ganhou um toque especial. A implementação do Next.js garante um carregamento rápido das páginas, enquanto o uso do TypeScript evita erros e facilita a manutenção. Além disso, o Tailwind CSS permitiu criar um design responsivo e consistente de forma descomplicada. Como resultado, a nova Landing Page apresenta um visual moderno e clean, proporcionando uma navegação suave e agradável aos visitantes. Certamente, essa nova abordagem será apreciada por todos!',
       ],
     },
     {

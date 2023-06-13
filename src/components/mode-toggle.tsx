@@ -13,9 +13,9 @@ export function ModeToggle() {
   }
 
   return (
-    <div className="flex items-center space-x-4 justify-between rounded-md border p-4">
+    <div className="flex items-center justify-between space-x-4 rounded-md border p-4">
       {theme === 'light' ? <Icons.sun /> : <Icons.moon />}
-      <div className="hidden md:flex flex-1">
+      <div className="hidden flex-1 md:flex">
         <p className="text-sm font-medium leading-none">
           Tema {theme === 'light' ? 'Claro' : 'Escuro'}
         </p>

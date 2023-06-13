@@ -28,13 +28,13 @@ export function ProjectCard({
   return (
     <Link href={`/projects/${slug}`}>
       <Card className={cn('cursor-pointer', className)} {...props}>
-        <CardHeader className="flex flex-col lg:flex-row gap-4">
+        <CardHeader className="flex flex-col gap-4 lg:flex-row">
           <Image
             alt={title}
             src={image}
             width="200"
             height="200"
-            className="w-full lg:w-fit aspect-video rounded-md object-contain bg-accent hover:bg-accent-foreground hover:scale-105 transition-all duration-100"
+            className="aspect-video w-full rounded-md bg-accent object-contain transition-all duration-100 hover:scale-105 hover:bg-accent-foreground lg:w-fit"
           />
           <div className="flex flex-col justify-between">
             <div className="space-y-2">
@@ -42,7 +42,7 @@ export function ProjectCard({
               <CardDescription>{description}</CardDescription>
             </div>
 
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="mt-4 flex flex-wrap gap-2">
               {tags?.map(tag => (
                 <p
                   key={tag}

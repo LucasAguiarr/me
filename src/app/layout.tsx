@@ -55,7 +55,7 @@ export default function RootLayout({
             <SiteHeader />
 
             <div className=" flex flex-col items-center lg:ml-64">
-              <main className="min-h-screen mt-28 mx-4 lg:w-3/4 max-w-3xl">
+              <main className="mx-4 mt-28 min-h-screen max-w-3xl lg:w-3/4">
                 {children}
               </main>
 

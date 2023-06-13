@@ -7,8 +7,8 @@ import { ProfileCard } from '@/components/profile-card';
 
 export function SiteHeader() {
   return (
-    <header className="fixed w-full h-16 top-0 z-40 border-b bg-background/95 backdrop-blur lg:border-r lg:border-b-0 lg:w-64 lg:min-h-screen">
-      <div className="flex h-full items-center justify-between px-4 lg:justify-start lg:flex-col lg:py-10">
+    <header className="fixed top-0 z-40 h-16 w-full border-b bg-background/95 backdrop-blur lg:min-h-screen lg:w-64 lg:border-b-0 lg:border-r">
+      <div className="flex h-full items-center justify-between px-4 lg:flex-col lg:justify-start lg:py-10">
         <Link href="/">
           <ProfileCard />
         </Link>

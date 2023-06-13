@@ -30,7 +30,7 @@ function MenuButton({
         variant={isSelect ? 'outline' : 'ghost'}
         size="sm"
         className={
-          'flex w-full items-center gap-2 justify-start transition-colors hover:text-foreground/80'
+          'flex w-full items-center justify-start gap-2 transition-colors hover:text-foreground/80'
         }
         {...rest}
       >
@@ -52,10 +52,10 @@ export function MainNave({ cb }: MainNaveProps) {
   }
 
   return (
-    <div className="flex flex-col justify-between h-full">
+    <div className="flex h-full flex-col justify-between">
       <nav>
-        <div className="flex flex-col gap-2 mt-4">
-          <p className="uppercase text-xs font-light leading-loose">Menu</p>
+        <div className="mt-4 flex flex-col gap-2">
+          <p className="text-xs font-light uppercase leading-loose">Menu</p>
           {navs.map(nav => (
             <MenuButton
               key={nav.title}
@@ -70,21 +70,21 @@ export function MainNave({ cb }: MainNaveProps) {
         </div>
 
         <div className="mt-10">
-          <p className="uppercase text-xs font-light leading-loose">Seguir</p>
+          <p className="text-xs font-light uppercase leading-loose">Seguir</p>
 
-          <div className="flex flex-col gap-2 mt-2">
+          <div className="mt-2 flex flex-col gap-2">
             <MenuButton path={siteConfig.links.linkedin} isExternal>
-              <Icons.linkedin className="w-4 h-4" />
+              <Icons.linkedin className="h-4 w-4" />
               Linkedin
             </MenuButton>
 
             <MenuButton path={siteConfig.links.github} isExternal>
-              <Icons.github className="w-4 h-4" />
+              <Icons.github className="h-4 w-4" />
               Github
             </MenuButton>
 
             <MenuButton path={siteConfig.links.twitter} isExternal>
-              <Icons.twitter className="w-4 h-4" />
+              <Icons.twitter className="h-4 w-4" />
               Twitter
             </MenuButton>
           </div>

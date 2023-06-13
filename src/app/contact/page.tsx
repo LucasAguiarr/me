@@ -8,7 +8,7 @@ export default function ContactPage() {
     <div>
       <PageHeader title={[title]} description={description} />
 
-      <div className="mt-16 mb-10 flex flex-col gap-4">
+      <div className="mb-10 mt-16 flex flex-col gap-4">
         <ContactForm />
       </div>
     </div>

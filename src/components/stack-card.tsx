@@ -50,7 +50,7 @@ export function StackCard({ className, ...props }: CardProps) {
         <Collapsible open={isOpen} onOpenChange={setIsOpen}>
           <CardHeader>
             <CollapsibleTrigger asChild>
-              <div className="flex items-center justify-between cursor-pointer">
+              <div className="flex cursor-pointer items-center justify-between">
                 <CardTitle>Stacks</CardTitle>
                 <Button variant="ghost" size="sm" className="w-9 p-0">
                   <Icons.chevronsupdown className="h-4 w-4" />
@@ -66,7 +66,7 @@ export function StackCard({ className, ...props }: CardProps) {
             ))}
           </div>
 
-          <CollapsibleContent className="space-y-2 mt-2">
+          <CollapsibleContent className="mt-2 space-y-2">
             {stacks.slice(3).map(stack => (
               <Stack key={stack.title} {...stack} />
             ))}
