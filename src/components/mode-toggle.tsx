@@ -17,7 +17,7 @@ export function ModeToggle() {
       {theme === 'light' ? <Icons.sun /> : <Icons.moon />}
       <div className="hidden md:flex flex-1">
         <p className="text-sm font-medium leading-none">
-          {theme === 'light' ? 'Light' : 'Dark'} Mode
+          Tema {theme === 'light' ? 'Claro' : 'Escuro'}
         </p>
       </div>
       <Switch onCheckedChange={handleThemeChange} />

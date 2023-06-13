@@ -3,15 +3,13 @@ import { ProjectCard } from '@/components/project-card';
 import { projects } from '@/config/projects';
 
 export default function ProjectsPage() {
+  const { title, description, projects: allProjects } = projects;
   return (
     <div>
-      <PageHeader
-        title={['Projects']}
-        description="Explore my latest projects and witness innovation in action."
-      />
+      <PageHeader title={[title]} description={description} />
 
       <div className="mt-16 mb-10 flex flex-col gap-4">
-        {projects.map(project => (
+        {allProjects.map(project => (
           <ProjectCard key={project.title} {...project} />
         ))}
       </div>

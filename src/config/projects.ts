@@ -1,101 +1,110 @@
-export const projects = [
-  {
-    title: 'Admin Dashboard',
-    description:
-      'Intuitive platform for monitoring, managing, and making strategic decisions.',
-    tags: ['React', 'Typescript', 'tailwind', 'Material UI', 'Recharts'],
-    image: '/images/dashboard.png',
-    slug: 'admin-dashboard',
-    repository: 'https://github.com/LucasAguiarr/dashboard',
-    contents: [
-      'The Admin Dashboard project is a robust and intuitive platform designed to provide a comprehensive and simplified view of the performance and operations of a system or application. This powerful tool offers a variety of features and functionalities that assist administrators in monitoring, managing, and making strategic decisions based on collected data.',
-      'The Admin Dashboard has been developed with a focus on usability and the ability to provide valuable information quickly and efficiently. Its intuitive and user-friendly interface allows administrators to access different metrics, charts, and reports in an organized and visually appealing manner.',
-      'With the Admin Dashboard, administrators have the ability to monitor various key metrics such as user traffic, conversion rates, server response time, and more. This data is presented in a clear and concise manner, enabling administrators to identify trends, anomalies, and areas for improvement in real-time.',
-      'Additionally, the Admin Dashboard offers advanced data filtering and segmentation features, allowing administrators to delve into analysis and gain more detailed insights. They can customize dashboards and reports according to their specific needs, ensuring access to the most relevant information for decision-making.',
-      'The project also includes user management features, enabling administrators to grant different levels of access and permissions to team members. This ensures data security and enables administrators to effectively delegate tasks and responsibilities.',
-      'Another highlight of the Admin Dashboard is its ability to integrate with other systems and applications. It can connect to different data sources such as databases, APIs, and external services to consolidate information in a centralized location. This integration facilitates comprehensive analysis and monitoring, providing a holistic view of operations.',
-      'In summary, the Admin Dashboard project offers a complete and comprehensive solution for administrators who want to monitor, manage, and make informed decisions based on relevant data. Its intuitive interface, advanced analytical features, and integration with other systems ensure an efficient and productive experience for administrators and their teams.',
-    ],
-  },
-  {
-    title: 'Landing Page',
-    description:
-      "Data Insight Lab's landing page: Empowering businesses with actionable data insights.",
-    tags: ['Next.js', 'TailwindCSS'],
-    image: '/images/data-insight-lab.png',
-    slug: 'data-insight-lab',
-    repository: 'https://github.com/LucasAguiarr/data-insight-lab',
-    contents: [
-      'Welcome to Data & Analytics Solutions!',
-      'At Data & Analytics Solutions, we specialize in developing comprehensive end-to-end solutions that empower businesses with actionable insights from their data. With our expertise in data analysis, advanced analytics, and cutting-edge technologies, we provide efficient and effective solutions tailored to your specific needs.',
-      'Our dedicated team of data scientists and analysts work closely with you to understand your business goals and challenges. We leverage the power of data to uncover valuable insights, identify trends, and make data-driven decisions that drive growth and success.',
-      'Our suite of services includes data collection, data cleaning and transformation, data modeling, predictive analytics, visualization, and reporting. We utilize industry-leading tools and techniques to ensure the highest quality results.',
-      'Whether you are looking to optimize your marketing strategies, improve operational efficiency, enhance customer experience, or gain a competitive edge, our solutions can provide you with the knowledge and tools to achieve your goals.',
-      'Experience the power of data-driven decision making with Data & Analytics Solutions. Contact us today to discuss how we can help transform your business through data',
-    ],
-  },
-  {
-    title: 'Elas',
-    description:
-      'Elas: Geolocated alert app for sexual abuse, notifying police instantly.',
-    tags: ['React-native', 'expo', 'socket.io'],
-    image: '/images/elas.png',
-    slug: 'elas',
-    repository: 'https://github.com/LucasAguiarr/elas-expo',
-    contents: [
-      "Elas is a groundbreaking mobile app designed to address the urgent issue of sexual abuse by providing immediate assistance to victims in distress. With its geolocation feature, Elas enables victims to alert the police instantly when they feel endangered. The app's primary objective is to notify law enforcement authorities through an API, ensuring prompt intervention and support. It is specifically developed for individuals who have experienced, are currently experiencing, or fear becoming victims of sexual or domestic violence.",
-      "Elas functions by securely registering victims' information in a comprehensive database. When the `DANGER` button is pressed within the app, the registered data, including the victim's location and pre-filled personal details, is shared with the police. This streamlined process facilitates efficient and effective police response, enabling them to quickly reach and aid the victim.",
-      'By leveraging technology and empowering victims, Elas strives to make a tangible difference in combating sexual abuse and providing immediate support to those in need.',
-    ],
-  },
-  {
-    title: 'Nubank Clone',
-    description:
-      'Nubank clone app: empowering users with seamless digital banking experience.',
-    tags: ['React-native', 'Typescript', 'Expo', 'styled-components'],
-    image: '/images/nubank.jpeg',
-    slug: 'nubank-clone',
-    repository: 'https://github.com/LucasAguiarr/nubank-clone',
-    contents: [
-      'The Nubank clone app offers a revolutionary digital banking experience, enabling users to have easy and quick access to innovative financial services. With features such as account management, payments, transfers, and expense analysis, the app provides convenience and efficiency for intelligent financial management. With an intuitive design and advanced security, the Nubank clone is a reliable and modern option for those seeking a new way to handle their finances.',
-    ],
-  },
-  {
-    title: 'Disaster Alert',
-    description:
-      'API for alert management and control: streamlining alert monitoring and response.',
-    tags: ['React', 'Next.js', 'TailwindCSS'],
-    image:
-      'https://user-images.githubusercontent.com/65921350/196827958-55a6a4c7-7a41-4ba0-9183-ebe7dccef09d.png',
-    slug: 'disaster-alert',
-    repository: 'https://github.com/LucasAguiarr/me',
-    contents: [
-      'The project is a free app that allows users to report real-time occurrences of natural disasters happening anywhere. With an intuitive interface, users can share crucial information about events such as earthquakes, hurricanes, wildfires, and floods, contributing to awareness and effective response to these situations. The app aims to provide a collaborative and easily accessible platform for monitoring and sharing alerts about natural disasters worldwide.',
-    ],
-  },
-  {
-    title: 'ChatGPT Clone',
-    description:
-      'Powerful and intuitive ChatGPT clone project for interactive conversational AI.',
-    tags: ['Typescript', 'Next.js', 'TailwindCSS', 'OpenAI', 'Firebase'],
-    image:
-      'https://user-images.githubusercontent.com/65921350/220784990-21eb2d7c-4006-4911-885a-877e091f8ca6.png',
-    slug: 'chatgpt-clone',
-    repository: 'https://github.com/LucasAguiarr/chatgpt',
-    contents: [
-      'The ChatGPT clone project is an exciting initiative to develop a functional and interactive replica of the ChatGPT natural language AI model. Using advanced machine learning techniques, the project aims to create a system capable of understanding and responding to questions, engaging in dynamic conversations, and providing relevant information to users, delivering a pleasant and authentic conversational experience. The ChatGPT clone project aims to democratize access to this cutting-edge technology, offering a sophisticated and customizable chatbot for various applications, from customer support to virtual assistants.',
-    ],
-  },
-  {
-    title: 'Atom6',
-    description:
-      'Article management app: Efficiently organize, update, and track articles seamlessly.',
-    tags: ['React', 'Typescript', 'tailwind', 'Material UI', 'Recharts'],
-    image: '/images/atom6.png',
-    slug: 'atom6',
-    repository: 'https://github.com/LucasAguiarr/atom6',
-    contents: [
-      'The Article Management App is a comprehensive and intuitive solution for efficiently creating, editing, and controlling articles. With features such as categorization, real-time search, and updates, it allows you to keep your article library organized and up to date.',
-    ],
-  },
-];
+export const projects = {
+  title: 'Projetos',
+  description:
+    'Explore meus projetos mais recentes e testemunhe a inovação em ação.',
+  projects: [
+    {
+      title: 'Clone do ChatGPT',
+      description:
+        'Projeto de clone do ChatGPT poderoso e intuitivo para IA de conversação interativa.',
+      tags: ['Typescript', 'Next.js', 'TailwindCSS', 'OpenAI', 'Firebase'],
+      image:
+        'https://user-images.githubusercontent.com/65921350/220784990-21eb2d7c-4006-4911-885a-877e091f8ca6.png',
+      slug: 'chatgpt-clone',
+      repository: 'https://github.com/LucasAguiarr/chatgpt',
+      contents: [
+        'O projeto de clone do ChatGPT é uma iniciativa emocionante para desenvolver uma réplica funcional e interativa do modelo de IA em linguagem natural ChatGPT. Combinando a potência do modelo de IA de última geração da OpenAI com uma interface amigável e intuitiva, o clone do ChatGPT permite que os usuários experimentem e interajam com uma conversação baseada em IA.',
+        'Utilizando a tecnologia da OpenAI, o clone do ChatGPT responde às perguntas e consultas dos usuários em tempo real, oferecendo respostas relevantes e úteis. A interface do usuário é projetada para facilitar a interação, fornecendo uma experiência de conversação natural e envolvente.',
+        'Além disso, o projeto do clone do ChatGPT é altamente personalizável e expansível. Os desenvolvedores podem modificar e aprimorar o modelo de IA, adicionar funcionalidades extras e integrar com outros sistemas e aplicativos conforme necessário.',
+        'O clone do ChatGPT pode ser usado para uma variedade de aplicações, como assistentes virtuais, chatbots, suporte ao cliente automatizado, tutoria online e muito mais. Sua capacidade de compreender e responder à linguagem natural torna-o uma ferramenta poderosa para melhorar a interação humana com sistemas de IA.',
+      ],
+    },
+    {
+      title: 'Landing Page',
+      description:
+        'Landing Page do Data Insight Lab: Capacitando empresas com insights acionáveis de dados.',
+      tags: ['Next.js', 'TailwindCSS'],
+      image: '/images/data-insight-lab.png',
+      slug: 'data-insight-lab',
+      repository: 'https://github.com/LucasAguiarr/data-insight-lab',
+      contents: [
+        'Bem-vindo à Data & Analytics Solutions!',
+        'Na Data & Analytics Solutions, somos especializados no desenvolvimento de soluções abrangentes de ponta a ponta que capacitam as empresas com insights acionáveis a partir de seus dados. Com nossa expertise em análise de dados, análises avançadas e tecnologias de ponta, fornecemos soluções eficientes e eficazes, personalizadas para atender às suas necessidades específicas.',
+        'Nossa equipe dedicada de cientistas de dados e analistas trabalha em estreita colaboração com você para entender seus objetivos e desafios de negócios. Utilizamos o poder dos dados para descobrir insights valiosos, identificar tendências e tomar decisões orientadas por dados que impulsionam o crescimento e o sucesso.',
+        'Nosso conjunto de serviços inclui coleta de dados, limpeza e transformação de dados, modelagem de dados, análises preditivas, visualização e geração de relatórios. Utilizamos ferramentas e técnicas líderes do setor para garantir resultados da mais alta qualidade.',
+        'Se você deseja otimizar suas estratégias de marketing, melhorar a eficiência operacional, aprimorar a experiência do cliente ou obter uma vantagem competitiva, nossas soluções podem fornecer o conhecimento e as ferramentas necessárias para alcançar seus objetivos.',
+        'Experimente o poder da tomada de decisões orientada por dados com a Data & Analytics Solutions. Entre em contato conosco hoje mesmo para discutir como podemos ajudar a transformar seu negócio por meio de dados.',
+      ],
+    },
+    {
+      title: 'Painel Administrativo',
+      description:
+        'Plataforma intuitiva para monitoramento, gerenciamento e tomada de decisões estratégicas.',
+      tags: ['React', 'Typescript', 'tailwind', 'Material UI', 'Recharts'],
+      image: '/images/dashboard.png',
+      slug: 'painel-administrativo',
+      repository: 'https://github.com/LucasAguiarr/dashboard',
+      contents: [
+        'O projeto do Painel Administrativo é uma plataforma robusta e intuitiva projetada para fornecer uma visão abrangente e simplificada do desempenho e das operações de um sistema ou aplicativo. Essa ferramenta poderosa oferece uma variedade de recursos e funcionalidades que auxiliam administradores no monitoramento, gerenciamento e tomada de decisões estratégicas com base nos dados coletados.',
+        'O Painel Administrativo foi desenvolvido com foco na usabilidade e na capacidade de fornecer informações valiosas de forma rápida e eficiente. Sua interface intuitiva e amigável permite que os administradores acessem diferentes métricas, gráficos e relatórios de maneira organizada e visualmente atraente.',
+        'Com o Painel Administrativo, os administradores têm a capacidade de monitorar várias métricas importantes, como tráfego de usuários, taxas de conversão, tempo de resposta do servidor e muito mais. Esses dados são apresentados de maneira clara e concisa, permitindo que os administradores identifiquem tendências, anomalias e áreas de melhoria em tempo real.',
+        'Além disso, o Painel Administrativo oferece recursos avançados de filtragem e segmentação de dados, permitindo que os administradores aprofundem a análise e obtenham insights mais detalhados. Eles podem personalizar painéis e relatórios de acordo com suas necessidades específicas, garantindo acesso às informações mais relevantes para a tomada de decisões.',
+        'O projeto também inclui recursos de gerenciamento de usuários, permitindo que os administradores concedam diferentes níveis de acesso e permissões aos membros da equipe. Isso garante a segurança dos dados e permite que os administradores deleguem tarefas e responsabilidades de forma eficaz.',
+        'Outro destaque do Painel Administrativo é sua capacidade de integração com outros sistemas e aplicativos. Ele pode se conectar a diferentes fontes de dados, como bancos de dados, APIs e serviços externos, para consolidar informações em um local centralizado. Essa integração facilita a análise e o monitoramento abrangentes, fornecendo uma visão holística das operações.',
+        'Em resumo, o projeto do Painel Administrativo oferece uma solução completa e abrangente para administradores que desejam monitorar, gerenciar e tomar decisões informadas com base em dados relevantes. Sua interface intuitiva, recursos analíticos avançados e integração com outros sistemas garantem uma experiência eficiente e produtiva para administradores e suas equipes.',
+      ],
+    },
+    {
+      title: 'Elas',
+      description:
+        'Elas: Aplicativo de alerta com geolocalização para abuso sexual, notificando a polícia instantaneamente.',
+      tags: ['React-native', 'expo', 'socket.io'],
+      image: '/images/elas.png',
+      slug: 'elas',
+      repository: 'https://github.com/LucasAguiarr/elas-expo',
+      contents: [
+        'Elas é um aplicativo móvel inovador projetado para lidar com o problema urgente do abuso sexual, fornecendo assistência imediata a vítimas em situação de perigo. Com sua funcionalidade de geolocalização, Elas permite que as vítimas alertem a polícia instantaneamente quando se sentirem em perigo. O principal objetivo do aplicativo é notificar as autoridades policiais por meio de uma API, garantindo intervenção e suporte rápidos. Ele foi desenvolvido especificamente para pessoas que já sofreram, estão sofrendo ou temem se tornar vítimas de violência sexual ou doméstica.',
+        "Elas funciona registrando as informações das vítimas de forma segura em um banco de dados abrangente. Quando o botão de 'PERIGO' é pressionado dentro do aplicativo, os dados registrados, incluindo a localização da vítima e detalhes pessoais preenchidos previamente, são compartilhados com a polícia. Esse processo simplificado facilita uma resposta policial eficiente e eficaz, permitindo que eles cheguem rapidamente e auxiliem a vítima.",
+        'Ao aproveitar a tecnologia e capacitar as vítimas, Elas se esforça para fazer uma diferença real no combate ao abuso sexual e fornecer suporte imediato a quem precisa.',
+      ],
+    },
+    {
+      title: 'Nubank Clone',
+      description:
+        'Aplicativo clone do Nubank: capacitando usuários com uma experiência bancária digital perfeita.',
+      tags: ['React-native', 'Typescript', 'Expo', 'styled-components'],
+      image: '/images/nubank.jpeg',
+      slug: 'nubank-clone',
+      repository: 'https://github.com/LucasAguiarr/nubank-clone',
+      contents: [
+        'O aplicativo clone do Nubank oferece uma experiência bancária digital revolucionária, permitindo que os usuários tenham acesso fácil e rápido a serviços financeiros inovadores. Com recursos como gestão de conta, pagamentos, transferências e análise de despesas, o aplicativo oferece conveniência e eficiência para um gerenciamento financeiro inteligente. Com um design intuitivo e segurança avançada, o clone do Nubank é uma opção confiável e moderna para aqueles que buscam uma nova maneira de lidar com suas finanças.',
+      ],
+    },
+    {
+      title: 'Disaster Alert',
+      description:
+        'API de gerenciamento e controle de alertas: agilizando o monitoramento e a resposta a alertas.',
+      tags: ['React', 'Next.js', 'TailwindCSS'],
+      image:
+        'https://user-images.githubusercontent.com/65921350/196827958-55a6a4c7-7a41-4ba0-9183-ebe7dccef09d.png',
+      slug: 'disaster-alert',
+      repository: 'https://github.com/LucasAguiarr/me',
+      contents: [
+        'O projeto é um aplicativo gratuito que permite aos usuários relatar ocorrências em tempo real de desastres naturais acontecendo em qualquer lugar. Com uma interface intuitiva, os usuários podem compartilhar informações cruciais sobre eventos como terremotos, furacões, incêndios florestais e inundações, contribuindo para a conscientização e resposta eficaz a essas situações. O aplicativo tem como objetivo fornecer uma plataforma colaborativa e de fácil acesso para monitorar e compartilhar alertas sobre desastres naturais em todo o mundo.',
+      ],
+    },
+
+    {
+      title: 'Atom6',
+      description:
+        'Aplicativo de gerenciamento de artigos: organize, atualize e rastreie artigos de forma eficiente e sem problemas.',
+      tags: ['React', 'Typescript', 'tailwind', 'Material UI', 'Recharts'],
+      image: '/images/atom6.png',
+      slug: 'atom6',
+      repository: 'https://github.com/LucasAguiarr/atom6',
+      contents: [
+        'O Aplicativo de Gerenciamento de Artigos é uma solução abrangente e intuitiva para criar, editar e controlar artigos de forma eficiente. Com recursos como categorização, pesquisa em tempo real e atualizações, ele permite que você mantenha sua biblioteca de artigos organizada e atualizada.',
+      ],
+    },
+  ],
+};

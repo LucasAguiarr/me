@@ -11,15 +11,16 @@ import Link from 'next/link';
 type Props = {};
 
 export default function ProjectPage({}: Props) {
+  const { projects: allProjects } = projects;
   const pathname = usePathname();
 
-  const project = projects.find(project => pathname.includes(project.slug));
+  const project = allProjects.find(project => pathname.includes(project.slug));
 
   if (!project) return notFound();
 
   return (
     <div>
-      <PageHeader title={[project?.title]} description={project?.description} />
+      <PageHeader title={[project.title]} description={project.description} />
 
       <div className="mt-16 mb-10 flex flex-col gap-4">
         <Image
@@ -27,7 +28,7 @@ export default function ProjectPage({}: Props) {
           src={project.image}
           width="1000"
           height="1000"
-          className="rounded-md aspect-video w-full max-h-96 object-contain bg-accent hover:bg-accent-foreground hover:scale-105 transition-all duration-300"
+          className="rounded-md aspect-video w-full max-h-96 object-contain bg-accent hover:bg-accent-foreground hover:scale-125 z-50 transition-all duration-100"
         />
 
         {project.contents.map((content, index) => (

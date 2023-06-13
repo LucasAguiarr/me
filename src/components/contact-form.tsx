@@ -63,45 +63,45 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit}>
       <Card className="max-w-3xl">
         <CardHeader>
-          <CardTitle>Send a message</CardTitle>
+          <CardTitle>Envie uma mensagem</CardTitle>
           <CardDescription>
-            I'm always open to discuss new projects, creative ideas or
-            opportunities to be part of your visions.
+            Estou sempre aberto a discutir novos projetos, ideias criativas ou
+            oportunidades de fazer parte de suas visões.
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-6">
           <div className="flex items-center justify-between gap-6">
             <div className="flex flex-col flex-1 gap-2">
-              <Label htmlFor="name">Name</Label>
+              <Label htmlFor="name">Nome</Label>
               <Input
                 id="name"
-                placeholder="Type your name"
+                placeholder="Digite seu nome"
                 onChange={handleNameChange}
               />
             </div>
 
             <div className="flex flex-col flex-1 gap-2">
-              <Label htmlFor="email">Emil</Label>
+              <Label htmlFor="email">E-mil</Label>
               <Input
                 id="email"
-                placeholder="Type your email"
+                placeholder="Digite seu e-mail"
                 onChange={handleEmailChange}
               />
             </div>
           </div>
 
           <div className="flex flex-col flex-1 gap-2">
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message">Mensagem</Label>
             <Textarea
               id="message"
-              placeholder="Type your message here"
+              placeholder="Digite sua mensagem aqui"
               onChange={handleMessageChange}
             />
           </div>
         </CardContent>
         <CardFooter>
           <Button className="w-full">
-            {isSending ? 'Sending...' : 'Submit'}
+            {isSending ? 'Enviando...' : 'Enviar'}
           </Button>
         </CardFooter>
       </Card>

@@ -70,7 +70,7 @@ export function MainNave({ cb }: MainNaveProps) {
         </div>
 
         <div className="mt-10">
-          <p className="uppercase text-xs font-light leading-loose">Fallow</p>
+          <p className="uppercase text-xs font-light leading-loose">Seguir</p>
 
           <div className="flex flex-col gap-2 mt-2">
             <MenuButton path={siteConfig.links.linkedin} isExternal>

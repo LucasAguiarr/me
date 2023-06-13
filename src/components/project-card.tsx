@@ -34,7 +34,7 @@ export function ProjectCard({
             src={image}
             width="200"
             height="200"
-            className="w-full lg:w-fit aspect-video rounded-md object-contain bg-accent hover:bg-accent-foreground hover:scale-105 transition-all duration-150"
+            className="w-full lg:w-fit aspect-video rounded-md object-contain bg-accent hover:bg-accent-foreground hover:scale-105 transition-all duration-100"
           />
           <div className="flex flex-col justify-between">
             <div className="space-y-2">

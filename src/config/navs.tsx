@@ -2,22 +2,22 @@ import { Icons } from '@/components/icons';
 
 export const navs = [
   {
-    title: 'Home',
+    title: 'Inicio',
     path: '/',
     icon: <Icons.compass className="w-4 h-4" />,
   },
   {
-    title: 'Projects',
+    title: 'Projetos',
     path: '/projects',
     icon: <Icons.paper className="w-4 h-4" />,
   },
   {
-    title: 'About',
+    title: 'Sobre',
     path: '/about',
     icon: <Icons.person className="w-4 h-4" />,
   },
   {
-    title: 'Contact',
+    title: 'Contato',
     path: '/contact',
     icon: <Icons.mail className="w-4 h-4" />,
   },
