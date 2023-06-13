@@ -24,7 +24,7 @@ export default function Page() {
 
       <div className="mb-10 mt-16 flex flex-col gap-4">
         <div className="flex items-center justify-between">
-          <p>Últimos projetos</p>
+          <p className="text-base font-medium">Últimos projetos</p>
           <Button variant="link">
             <Link href="/projects">Ver todos</Link>
           </Button>
