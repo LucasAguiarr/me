@@ -22,7 +22,23 @@ export default function ProjectPage({}: Props) {
     <div>
       <PageHeader title={[project.title]} description={project.description} />
 
-      <div className="mt-16 mb-10 flex flex-col gap-4">
+      <div className="flex flex-wrap gap-2 mt-4">
+        {project.tags.map(tag => (
+          <p
+            key={tag}
+            className="flex items-center rounded-md border p-2 text-xs"
+          >
+            {tag}
+          </p>
+        ))}
+      </div>
+
+      <div className="flex items-center gap-2 mt-4">
+        <Icons.github className="w-4 h-4" />
+        <Link href={project.repository}>{project.repository}</Link>
+      </div>
+
+      <div className="mt-10 mb-10 flex flex-col gap-4">
         <Image
           alt={project.title}
           src={project.image}
@@ -34,22 +50,6 @@ export default function ProjectPage({}: Props) {
         {project.contents.map((content, index) => (
           <p key={index}>{content}</p>
         ))}
-
-        <div className="flex flex-wrap gap-2 mt-4">
-          {project.tags.map(tag => (
-            <p
-              key={tag}
-              className="flex items-center rounded-md border p-2 text-xs"
-            >
-              {tag}
-            </p>
-          ))}
-        </div>
-
-        <div className="flex items-center gap-2">
-          <Icons.github className="w-4 h-4" />
-          <Link href={project.repository}>{project.repository}</Link>
-        </div>
       </div>
     </div>
   );
