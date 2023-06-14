@@ -14,7 +14,9 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { siteConfig } from '@/config/site';
-import { sendEmail } from '@/hooks/use-send-email';
+import { SendEmail } from '@/lib/send-email';
+import { render } from '@react-email/render';
+import { Email } from './email';
 
 export default function ContactForm() {
   const [isSending, setIsSending] = useState(false);
@@ -25,14 +27,18 @@ export default function ContactForm() {
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setIsSending(true);
+
+    const emailHtml = render(
+      <Email email={email} message={message} name={name} />
+    );
     const data = {
-      me: siteConfig.author.email,
-      name,
-      email,
-      message,
+      from: siteConfig.author.email,
+      to: email,
+      subject: `Mensagem de ${name}`,
+      html: emailHtml,
     };
     try {
-      await sendEmail(data);
+      await SendEmail(data);
       resetForm();
     } catch (error) {
       console.log({ error });
