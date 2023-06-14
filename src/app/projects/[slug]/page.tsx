@@ -44,7 +44,7 @@ export default function ProjectPage({}: Props) {
           src={project.image}
           width="1000"
           height="1000"
-          className="z-50 aspect-video max-h-96 w-full rounded-md bg-accent object-contain transition-all duration-100 hover:scale-125 hover:bg-accent-foreground"
+          className="z-50 aspect-video max-h-96 w-full rounded-md bg-accent object-contain hover:bg-accent-foreground"
         />
 
         {project.contents.map((content, index) => (

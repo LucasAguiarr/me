@@ -16,7 +16,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { siteConfig } from '@/config/site';
 import { SendEmail } from '@/lib/send-email';
 import { render } from '@react-email/render';
-import { Email } from './email';
+import { Email } from './email-template';
 
 export default function ContactForm() {
   const [isSending, setIsSending] = useState(false);
