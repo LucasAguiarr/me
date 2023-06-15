@@ -1,6 +1,4 @@
-'use client';
-
-import { notFound, usePathname } from 'next/navigation';
+import { notFound } from 'next/navigation';
 
 import { Icons } from '@/components/icons';
 import PageHeader from '@/components/page-header';
@@ -8,13 +6,16 @@ import { projects } from '@/config/projects';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Props = {};
+type Props = {
+  params: {
+    slug: string;
+  };
+};
 
-export default function ProjectPage({}: Props) {
+export default function ProjectPage({ params: { slug } }: Props) {
   const { projects: allProjects } = projects;
-  const pathname = usePathname();
 
-  const project = allProjects.find(project => pathname.includes(project.slug));
+  const project = allProjects.find(project => slug.includes(project.slug));
 
   if (!project) return notFound();
 

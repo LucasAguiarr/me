@@ -28,16 +28,16 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSending(true);
 
-    const emailHtml = render(
-      <Email email={email} message={message} name={name} />
-    );
-    const data = {
-      from: siteConfig.author.email,
-      to: email,
-      subject: `Mensagem de ${name}`,
-      html: emailHtml,
-    };
     try {
+      const emailHtml = render(
+        <Email email={email} message={message} name={name} />
+      );
+      const data = {
+        from: siteConfig.author.email,
+        to: email,
+        subject: `Mensagem de ${name}`,
+        html: emailHtml,
+      };
       await SendEmail(data);
       resetForm();
     } catch (error) {
@@ -87,7 +87,7 @@ export default function ContactForm() {
             </div>
 
             <div className="flex flex-1 flex-col gap-2">
-              <Label htmlFor="email">E-mil</Label>
+              <Label htmlFor="email">E-mail</Label>
               <Input
                 id="email"
                 placeholder="Digite seu e-mail"
