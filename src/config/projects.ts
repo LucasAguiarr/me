@@ -78,7 +78,7 @@ export const projects = {
       title: 'Disaster Alert',
       description:
         'API de gerenciamento e controle de alertas: agilizando o monitoramento e a resposta a alertas.',
-      tags: ['React', 'Next.js', 'TailwindCSS'],
+      tags: ['React-native', 'socket.io', 'Expo', 'Typescript'],
       image:
         'https://user-images.githubusercontent.com/65921350/196827958-55a6a4c7-7a41-4ba0-9183-ebe7dccef09d.png',
       slug: 'disaster-alert',
@@ -92,7 +92,7 @@ export const projects = {
       title: 'Atom6',
       description:
         'Aplicativo de gerenciamento de artigos: organize, atualize e rastreie artigos de forma eficiente e sem problemas.',
-      tags: ['React', 'Typescript', 'tailwind', 'Material UI', 'Recharts'],
+      tags: ['React-native', 'Typescript'],
       image: '/images/atom6.png',
       slug: 'atom6',
       repository: 'https://github.com/LucasAguiarr/atom6',
