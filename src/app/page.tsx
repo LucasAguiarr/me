@@ -2,7 +2,7 @@ import CopyButton from '@/components/copy-button';
 import PageHeader from '@/components/page-header';
 import { ProjectCard } from '@/components/project-card';
 import { StackCard } from '@/components/stack-card';
-import { Button } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import { home } from '@/config/home';
 import { projects } from '@/config/projects';
 import { siteConfig } from '@/config/site';
@@ -15,9 +15,9 @@ export default function Page() {
     <div>
       <PageHeader title={title} description={description}>
         <div className="mt-8 flex items-center gap-2">
-          <Button>
-            <Link href="/contact">Contato</Link>
-          </Button>
+          <Link className={buttonVariants()} href="/contact">
+            Contato
+          </Link>
           <CopyButton copy={siteConfig.author.email}>E-mail</CopyButton>
         </div>
       </PageHeader>
@@ -30,7 +30,7 @@ export default function Page() {
           </Button>
         </div>
 
-        {allProjects.slice(0, 2).map(project => (
+        {allProjects.slice(0, 2).map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
 

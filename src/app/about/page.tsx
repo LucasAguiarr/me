@@ -8,7 +8,7 @@ export default function AboutPage() {
     <div>
       <PageHeader title={[title]} description={description} />
 
-      <div className="mb-10 mt-16 flex flex-col gap-4">
+      <div className="mb-10 mt-16 flex flex-col gap-4   ">
         <Image
           alt="Lucas"
           src="/images/about.jpg"

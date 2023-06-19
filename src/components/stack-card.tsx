@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import * as React from 'react';
 
 import { Icons } from '@/components/icons';
@@ -10,7 +11,6 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
-import Image from 'next/image';
 
 const stacks = [
   {
@@ -61,13 +61,13 @@ export function StackCard({ className, ...props }: CardProps) {
           </CardHeader>
 
           <div className="space-y-2">
-            {stacks.slice(0, 3).map(stack => (
+            {stacks.slice(0, 3).map((stack) => (
               <Stack key={stack.title} {...stack} />
             ))}
           </div>
 
           <CollapsibleContent className="mt-2 space-y-2">
-            {stacks.slice(3).map(stack => (
+            {stacks.slice(3).map((stack) => (
               <Stack key={stack.title} {...stack} />
             ))}
           </CollapsibleContent>

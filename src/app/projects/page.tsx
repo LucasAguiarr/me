@@ -9,7 +9,7 @@ export default function ProjectsPage() {
       <PageHeader title={[title]} description={description} />
 
       <div className="mb-10 mt-16 flex flex-col gap-4">
-        {allProjects.map(project => (
+        {allProjects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
       </div>

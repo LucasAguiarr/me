@@ -1,4 +1,6 @@
-export async function SendEmail(data: SendEmail) {
+import type { SendEmail as SendEmailType } from '@/types/email';
+
+export async function SendEmail(data: SendEmailType) {
   const { from, to, subject, html } = data;
   await fetch('/api/send', {
     method: 'POST',

@@ -1,6 +1,7 @@
 import './globals.css';
 
 import { Metadata } from 'next';
+import { ReactNode } from 'react';
 
 import { Analytics } from '@/components/analytics';
 import { SiteFooter } from '@/components/site-footer';
@@ -37,17 +38,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt_BR">
+    <html lang="pt_BR" suppressHydrationWarning>
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">

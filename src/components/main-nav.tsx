@@ -56,7 +56,7 @@ export function MainNave({ cb }: MainNaveProps) {
       <nav>
         <div className="mt-4 flex flex-col gap-2">
           <p className="text-xs font-light uppercase leading-loose">Menu</p>
-          {navs.map(nav => (
+          {navs.map((nav) => (
             <MenuButton
               key={nav.title}
               path={nav.path}

@@ -30,7 +30,7 @@ export default function ContactForm() {
 
     try {
       const emailHtml = render(
-        <Email email={email} message={message} name={name} />
+        <Email email={email} message={message} name={name} />,
       );
       const data = {
         from: siteConfig.author.email,

@@ -1,3 +1,7 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { ComponentProps } from 'react';
+
 import {
   Card,
   CardDescription,
@@ -5,10 +9,8 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
-import Link from 'next/link';
 
-type CardProps = React.ComponentProps<typeof Card> & {
+type CardProps = ComponentProps<typeof Card> & {
   title: string;
   description: string;
   tags: string[];
@@ -43,7 +45,7 @@ export function ProjectCard({
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
-              {tags?.map(tag => (
+              {tags?.map((tag) => (
                 <p
                   key={tag}
                   className="flex items-center rounded-md border p-2 text-xs"

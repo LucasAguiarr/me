@@ -1,14 +1,16 @@
+import { ReactNode } from 'react';
+
 type Props = {
   title: string[];
   description: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
 };
 
 export default function PageHeader({ description, title, children }: Props) {
   return (
     <div>
       <h1 className="text-4xl font-bold leading-snug">
-        {title.map(value => (
+        {title.map((value) => (
           <>
             {value}
             <br />

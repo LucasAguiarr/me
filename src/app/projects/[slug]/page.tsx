@@ -6,16 +6,12 @@ import { projects } from '@/config/projects';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
+type Props = { params: { slug: string } };
 
 export default function ProjectPage({ params: { slug } }: Props) {
   const { projects: allProjects } = projects;
 
-  const project = allProjects.find(project => slug.includes(project.slug));
+  const project = allProjects.find((project) => slug.includes(project.slug));
 
   if (!project) return notFound();
 
@@ -24,7 +20,7 @@ export default function ProjectPage({ params: { slug } }: Props) {
       <PageHeader title={[project.title]} description={project.description} />
 
       <div className="mt-4 flex flex-wrap gap-2">
-        {project.tags.map(tag => (
+        {project.tags.map((tag) => (
           <p
             key={tag}
             className="flex items-center rounded-md border p-2 text-xs"

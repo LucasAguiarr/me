@@ -4,21 +4,21 @@ export const navs = [
   {
     title: 'Inicio',
     path: '/',
-    icon: <Icons.compass className="w-4 h-4" />,
+    icon: <Icons.compass className="h-4 w-4" />,
   },
   {
     title: 'Projetos',
     path: '/projects',
-    icon: <Icons.paper className="w-4 h-4" />,
+    icon: <Icons.paper className="h-4 w-4" />,
   },
   {
     title: 'Sobre',
     path: '/about',
-    icon: <Icons.person className="w-4 h-4" />,
+    icon: <Icons.person className="h-4 w-4" />,
   },
   {
     title: 'Contato',
     path: '/contact',
-    icon: <Icons.mail className="w-4 h-4" />,
+    icon: <Icons.mail className="h-4 w-4" />,
   },
 ];
