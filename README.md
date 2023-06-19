@@ -14,7 +14,7 @@ Este é o repositório do meu site de portfólio, onde apresento meus projetos, 
 
 ## Demonstração
 
-Uma demonstração do site está disponível [aqui](https://lucas-aguiar.vercel.app).
+Uma demonstração do site está disponível [aqui](https://lucasaguiarr.vercel.app).
 
 ## Pré-requisitos
 
